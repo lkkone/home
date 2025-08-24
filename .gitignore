@@ -1,0 +1,3 @@
+# 忽略 Caddy 本地持久化文件（证书、账户、缓存）
+caddy-config/
+caddy-data/
