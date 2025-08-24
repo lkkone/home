@@ -421,9 +421,12 @@ body {
     box-sizing: border-box;
     border-radius: 7px;
     display: flex;
-    margin-left: 10px;
     backdrop-filter: blur(var(--card_filter));-webkit-backdrop-filter: blur(var(--card_filter));
     background: var(--item_bg_color);
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
 
     align-items: center;
     justify-content: center;
@@ -1041,3 +1044,5 @@ footer {
         padding: 3px 6px;
     }
 }
+
+
