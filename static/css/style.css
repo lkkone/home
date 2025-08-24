@@ -423,10 +423,6 @@ body {
     display: flex;
     backdrop-filter: blur(var(--card_filter));-webkit-backdrop-filter: blur(var(--card_filter));
     background: var(--item_bg_color);
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    z-index: 1000;
 
     align-items: center;
     justify-content: center;
@@ -798,7 +794,10 @@ footer {
 
 
 .onoffswitch {
-    position: relative;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
     width: 38px;
     height: 20px;
     -webkit-user-select: none;
