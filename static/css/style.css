@@ -948,3 +948,22 @@ footer {
         margin-bottom: 10px;
     }
 }
+
+/* 正在阅读的书籍样式 - 3倍高度 */
+.projectItem.b {
+    height: 300px; /* project高度的3倍 */
+}
+
+.projectItem.b .projectItemLeft p {
+    font-size: 13px;
+    line-height: 1.6;
+    margin-top: 20px;
+    color: var(--item_left_text_color);
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+.projectItem.b .projectItemLeft h1 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
