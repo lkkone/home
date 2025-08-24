@@ -1,4 +1,4 @@
-# ZYYO主页PHP后台版本
+# likaikai主页PHP后台版本
  
 - 支持对图标、项目、分类、主题样式、标签、描述、左侧信息进行增删改查。  
 - 方便编辑名称、图标、点击.js事件等。  
@@ -10,8 +10,8 @@
 >售价：20元 
 
 
->**演示站**：[https://zyyo.cc](https://zyyo.cc)  
->**后台**：[https://zyyo.cc/admin](https://zyyo.cc/admin)  
+>**演示站**：[https://likaikai.cc](https://likaikai.cc)  
+>**后台**：[https://likaikai.cc/admin](https://likaikai.cc/admin)  
 >**账号**：admin  
 >**密码**：123456  
 
@@ -19,7 +19,7 @@
 > QQ：3509679579  
 > QQ交流群：560938976  
 
-![主页截图](https://zyyo.net/usr/picture/homepage.png)  
+![主页截图](https://likaikai.net/usr/picture/homepage.png)  
 
 ---
 
@@ -41,7 +41,7 @@
 - 支持**背景整体模糊**和**卡片模糊**，可通过 CSS 切换。  
 - 使用**原生 HTML、CSS、JS**，未使用框架或插件。  
 
-**GitHub**：[https://github.com/ZYYO666/homepage](https://github.com/ZYYO666/homepage)  
+**GitHub**：[https://github.com/likaikai666/homepage](https://github.com/likaikai666/homepage)  
 **QQ群下载**：560938976  
 
 **后续计划**：  
@@ -130,6 +130,6 @@
 
 - ## Star History
 
-[![Star History Chart](https://api.star-history.com/svg?repos=ZYYO666/homepage&type=Date)](https://star-history.com/#ZYYO666/homepage&Date)
+[![Star History Chart](https://api.star-history.com/svg?repos=likaikai666/homepage&type=Date)](https://star-history.com/#likaikai666/homepage&Date)
 
 
