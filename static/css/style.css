@@ -905,7 +905,7 @@ footer {
     font-size: 18px;
     margin-bottom: 15px;
     font-weight: 600;
-    border-bottom: 2px solid var(--purple_text_color);
+    border-bottom: 2px solid #90EE90;
     padding-bottom: 8px;
 }
 
@@ -923,7 +923,7 @@ footer {
     padding: 8px 12px;
     background: rgba(255, 255, 255, 0.05);
     border-radius: 6px;
-    border-left: 3px solid var(--purple_text_color);
+    border-left: 3px solid #90EE90;
     transition: all 0.2s ease;
 }
 
