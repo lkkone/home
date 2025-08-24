@@ -876,3 +876,43 @@ footer {
 .onoffswitch-checkbox:checked+.onoffswitch-label .onoffswitch-switch {
     right: 50%;
 }
+
+/* 正在做的事情样式 */
+.c {
+    height: 110px;
+    margin: 8px 15px;
+    width: calc(100% - 30px);
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.c .projectItemRight {
+    display: none;
+}
+
+.c .projectItemRight img {
+    display: none;
+}
+
+.c .projectItemLeft {
+    width: 100%;
+}
+
+/* 正在阅读的书籍样式 */
+.d {
+    height: 110px;
+    margin: 8px 15px;
+    width: calc(100% - 30px);
+    background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+}
+
+.d .projectItemRight {
+    display: none;
+}
+
+.d .projectItemRight img {
+    display: none;
+}
+
+.d .projectItemLeft {
+    width: 100%;
+}
