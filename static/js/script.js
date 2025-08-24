@@ -224,3 +224,30 @@ window.addEventListener('load', function() {
     }, 100);
 });
 
+// 底部模块显示控制
+// 开关变量：true = 显示，false = 隐藏
+var SHOW_FOOTER = false; // 默认关闭，不显示底部模块
+
+// 控制底部模块显示/隐藏的函数
+function toggleFooter() {
+    var footer = document.getElementById('footer');
+    if (footer) {
+        if (SHOW_FOOTER) {
+            footer.style.display = 'block';
+        } else {
+            footer.style.display = 'none';
+        }
+    }
+}
+
+// 页面加载完成后执行
+document.addEventListener('DOMContentLoaded', function() {
+    toggleFooter();
+});
+
+// 如果需要动态切换，可以调用这个函数
+function setFooterVisibility(show) {
+    SHOW_FOOTER = show;
+    toggleFooter();
+}
+
