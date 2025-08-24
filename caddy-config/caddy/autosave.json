@@ -1,0 +1,1 @@
+{"apps":{"http":{"servers":{"srv0":{"listen":[":443"],"routes":[{"handle":[{"handler":"subroute","routes":[{"handle":[{"handler":"vars","root":"/var/www/html"},{"encodings":{"gzip":{},"zstd":{}},"handler":"encode","prefer":["zstd","gzip"]},{"handler":"file_server","hide":["/etc/caddy/Caddyfile"]}]}]}],"match":[{"host":["linker.caonmd.com"]}],"terminal":true}]}}}}}
