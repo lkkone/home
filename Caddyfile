@@ -1,5 +1,7 @@
-:80 {
+{
     auto_https off
+}
+:80 {
     root * /var/www/html
     encode zstd gzip
     file_server
