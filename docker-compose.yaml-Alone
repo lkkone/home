@@ -3,7 +3,8 @@ services:
     image: caddy:alpine
     container_name: homepage-caddy
     ports:
-      - "8080:80"
+      - "80:80"
+      - "443:443"
     volumes:
       # 站点配置文件、htlm文件、只读
       - ./Caddyfile:/etc/caddy/Caddyfile:ro

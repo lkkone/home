@@ -1,5 +1,4 @@
-:80 {
-    auto_https off
+linker.caonmd.com {
     root * /var/www/html
     encode zstd gzip
     file_server
