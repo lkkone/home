@@ -1,7 +1,7 @@
 services:
   caddy:
     image: caddy:alpine
-    container_name: homepage-caddy
+    container_name: caddy-home
     ports:
       - "8080:80"
     volumes:
@@ -13,3 +13,6 @@ services:
       - ./caddy-data:/data
       - ./caddy-config:/config
     restart: always
+
+networks:
+  lkk_network:

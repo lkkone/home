@@ -13,3 +13,6 @@ services:
       - ./caddy-data:/data
       - ./caddy-config:/config
     restart: always
+
+networks:
+  lkk_network:
