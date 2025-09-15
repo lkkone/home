@@ -147,16 +147,7 @@ body {
 
 
 
-.likaikai-filter {
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    background: var(--back_filter_color);
-    backdrop-filter:  blur(var(--back_filter));
-    -webkit-backdrop-filter: blur(var(--back_filter));
-    z-index: -99999999;
-   
-}
+
 
 .likaikai-main {
     width: 100%;

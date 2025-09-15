@@ -5,8 +5,8 @@ services:
     ports:
       - "8080:80"
     volumes:
-      # 站点配置文件、htlm文件、只读
-      - ./Caddyfile:/etc/caddy/Caddyfile:ro
+      # 站点配置文件、html 文件、只读
+      - ./Caddyfile-Backend:/etc/caddy/Caddyfile:ro
       - ./index.html:/var/www/html/index.html:ro
       - ./static:/var/www/html/static:ro
       # 证书、账户持久化文件、读写
