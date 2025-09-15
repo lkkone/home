@@ -106,8 +106,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 
+    // 速度切换按钮：复用右上角 onoffswitch 样式
     var html = document.querySelector('html');
-    var themeState = getCookie("themeState") || "Light";
     var tanChiShe = document.getElementById("tanChiShe");
 
 
@@ -115,11 +115,11 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 
-    function changeTheme(theme) {
-        tanChiShe.src = "./static/svg/snake-" + theme + ".svg";
-        html.dataset.theme = theme;
-        setCookie("themeState", theme, 365);
-        themeState = theme;
+    // 统一为深色视觉；若存在贪吃蛇图片则固定为 Dark 版本
+    function applyDarkLook() {
+        if (tanChiShe) tanChiShe.src = "./static/svg/snake-Dark.svg";
+        html.dataset.theme = "Dark";
+        setCookie("themeState", "Dark", 365);
     }
 
 
@@ -129,23 +129,23 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
     var Checkbox = document.getElementById('myonoffswitch')
-    Checkbox.addEventListener('change', function () {
-        if (themeState == "Dark") {
-            changeTheme("Light");
-        } else if (themeState == "Light") {
-            changeTheme("Dark");
-        } else {
-            changeTheme("Dark");
-        }
-    });
-
-
-
-    if (themeState == "Dark") {
-        Checkbox.checked = false;
+    // 将按钮从主题切换改为速度切换：0.3x <-> 10x
+    if (Checkbox) {
+        Checkbox.addEventListener('change', function () {
+            if (window.starfieldControl && typeof window.starfieldControl.toggleFast === 'function') {
+                window.starfieldControl.toggleFast();
+            }
+        });
     }
 
-    changeTheme(themeState);
+
+
+    // 强制使用深色外观，保证与星空背景一致
+    applyDarkLook();
+    if (Checkbox) {
+        // 默认最低速 0.3x，对应按钮未选中（按原样式惯例）
+        Checkbox.checked = false;
+    }
 
 
 

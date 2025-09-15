@@ -87,7 +87,8 @@ body {
     width: 100%;
     position: relative;
     font-family: "b",  "a", sans-serif;
-    background: var(--main_bg_color);
+    /* 取消图片/浅色背景，交由星空画布呈现纯黑背景 */
+    background: #000;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -165,6 +166,16 @@ body {
     position: relative;
     display: flex;
     flex-direction: row;
+}
+
+/* 全屏星空画布置底 */
+#starfield {
+    position: fixed;
+    inset: 0;
+    width: 100vw;
+    height: 100vh;
+    display: block;
+    z-index: -100000000; /* 置于最底层，不遮挡页面交互 */
 }
 
 
