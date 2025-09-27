@@ -36,7 +36,7 @@
   const viewLerp = 0.085;
 
   // 速度控制（以 80 为 1.0x 基数）
-  let speed = 80 * 0.3; // 默认 0.3x
+  let speed = 80 * 1.0; // 默认 1.0x
   const minSpeed = 20;
   const maxSpeed = 800; // 10x
 
@@ -228,8 +228,8 @@
     const hud = document.getElementById('hud');
     if (hud) hud.style.display = 'none';
   }
-  // 确保初始是 0.3x
-  setMultiplier(0.3);
+  // 确保初始是 1.0x
+  setMultiplier(1.0);
   requestAnimationFrame(frame);
 })();
 
