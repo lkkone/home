@@ -85,35 +85,11 @@ function getCookie(name) {
     return null;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 document.addEventListener('DOMContentLoaded', function () {
-
-
-
-
-
 
     // 速度切换按钮：复用右上角 onoffswitch 样式
     var html = document.querySelector('html');
     var tanChiShe = document.getElementById("tanChiShe");
-
-
-
-
-
 
     // 统一为深色视觉；若存在贪吃蛇图片则固定为 Dark 版本
     function applyDarkLook() {
@@ -121,12 +97,6 @@ document.addEventListener('DOMContentLoaded', function () {
         html.dataset.theme = "Dark";
         setCookie("themeState", "Dark", 365);
     }
-
-
-
-
-
-
 
     var Checkbox = document.getElementById('myonoffswitch')
     // 将按钮从主题切换改为速度切换：0.3x <-> 10x
@@ -138,84 +108,13 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     }
 
-
-
     // 强制使用深色外观，保证与星空背景一致
     applyDarkLook();
     if (Checkbox) {
         // 默认最低速 0.3x，对应按钮未选中（按原样式惯例）
         Checkbox.checked = false;
-    }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-   
-
-    var fpsElement = document.createElement('div');
-    fpsElement.id = 'fps';
-    fpsElement.style.zIndex = '10000';
-    fpsElement.style.position = 'fixed';
-    fpsElement.style.left = '0';
-    document.body.insertBefore(fpsElement, document.body.firstChild);
-
-    var showFPS = (function () {
-        var requestAnimationFrame = window.requestAnimationFrame ||
-            window.webkitRequestAnimationFrame ||
-            window.mozRequestAnimationFrame ||
-            window.oRequestAnimationFrame ||
-            window.msRequestAnimationFrame ||
-            function (callback) {
-                window.setTimeout(callback, 1000 / 60);
-            };
-
-        var fps = 0,
-            last = Date.now(),
-            offset, step, appendFps;
-
-        step = function () {
-            offset = Date.now() - last;
-            fps += 1;
-
-            if (offset >= 1000) {
-                last += offset;
-                appendFps(fps);
-                fps = 0;
-            }
-
-            requestAnimationFrame(step);
-        };
-
-        appendFps = function (fpsValue) {
-            fpsElement.textContent = 'FPS: ' + fpsValue;
-        };
-
-        step();
-    })();
-    
-    
-    
-    //pop('./static/img/tz.jpg')
-    
-    
-    
+    }    
 });
-
-
-
 
 var pageLoading = document.querySelector("#likaikai-loading");
 window.addEventListener('load', function() {
@@ -250,4 +149,3 @@ function setFooterVisibility(show) {
     SHOW_FOOTER = show;
     toggleFooter();
 }
-
