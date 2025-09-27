@@ -107,7 +107,7 @@
 - 主要文件：
 - /static/root.css：主题样式文件。
 - /static/style.css：样式文件，可修改字体。
-- /static/img/favicon.ico：网页图标和头像。
+- /static/img/favicon-grayfish-o.ico：网页图标和头像。
 - /static/script.js：JS 功能文件。
 
 🧠 技术栈
